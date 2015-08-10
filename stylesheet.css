@@ -1,3 +1,7 @@
+@import "compass/css3";
+@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
+@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 .button{
 
 	font-size: 28;
@@ -12,16 +16,11 @@
 	}
 
 #menubar{
-background-color: #D32F2F;
+background-color: #F44336;
 min-height: 60;
 display: table;
 width: 100%;
 
-}
-
-body{
-	padding: 0;
-	margin: 0;
 }
 
 #heropic{
@@ -33,6 +32,7 @@ body{
 	cursor: pointer;
 	box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 	  display: block;
+	  background-color: #FFFFFF;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -47,6 +47,62 @@ figure{
 
 }
 footer{
-
+	position: center;
+	width: 100%;
 	
 }
+
+
+.smIcon{
+	padding-left: 100;
+
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  background-color: #FF5252;
+}
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+  
+}
+section #services li {
+  width: 100px;
+  height: 80px;
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+section #services li div {
+  width: 100px;
+  height: 100px;
+  color:  #FF5252;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 100px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #services li span {
+  width: 100px;
+  height: 20px;
+  display: block;
+  padding: 10px 0px;
+  color: #fff;
+  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+}
+
