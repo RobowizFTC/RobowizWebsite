@@ -1,0 +1,36 @@
+<!Doctype>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	
+	<div id = "menubar">
+		<span class = "button">Home</span>
+		<span class = "button">Our Story</span>
+		<span class = "button">Robot</span>
+		<span class = "button">Robot</span>
+	</div>
+	<figure style="position: relative; left: 0; top: 0;" class = 'hero'>
+		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="http://www.usfirst.org/uploadedImages/Robotics_Programs/FRC/FRC_Communications_Resource_Center/Branding_and_Logos/FIRST_horz.gif">
+		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
+	</figure>
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" language="JavaScript">
+  		function set_height() { // set body height = window height
+   	 	$('body').height($(window).height());
+  		}
+  		$(document).ready(function() {
+    		$(window).bind('resize', set_thing_height);
+    		set_height();
+  		});
+	</script>
+	<div id = 'ourStory'>
+		<p></p>
+	</div>
+</body>
+
+</html>
