@@ -1,5 +1,98 @@
 <!Doctype>
 <html>
+
+<!-- Include jQuery -->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+  <style type="text/css">
+  #navWrap {
+   height: 60px;
+}
+#nav {
+   background: #FF5252;  
+   position:fixed;  
+   box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+   width: 100%;
+}
+#nav ul {
+   margin-top: 10;
+   padding: 0;   
+   width: 100%; 
+}
+#nav li {
+   float: left;
+   
+   background-color: #FFF;
+   color: #FF5252;
+   list-style-type: none;
+   margin-bottom: 10;
+}
+#nav li a {
+   color: #FFFFFF;  
+   text-decoration: none;    
+}
+#nav li a:hover {
+   text-decoration: underline;   
+}
+
+  </style>
+<!--script type="text/javascript">
+$(document).ready(function () {  
+  var top = $('#yourID').offset().top - parseFloat($('#yourID').css('marginTop').replace(/auto/, 100));
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+      $('#yourID').addClass('fixed');
+    } else {
+      // otherwise remove it
+      $('#yourID').removeClass('fixed');
+    }
+  });
+});
+</script-->
+<script type='text/javascript'>
+$(window).load(function(){
+/**
+************************************************************
+*************** THIS IS THE NAVIGATION CODE ****************
+************************************************************
+**/
+
+$(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('#nav');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width()
+            });
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
+            isFixed = false;
+        }
+    });
+});
+
+});  
+
+</script>
 <head>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
@@ -7,16 +100,29 @@
 
 <body>
 	
-	<div id = "menubar">
-		<span class = "button">Home</span>
-		<span class = "button">Our Story</span>
-		<span class = "button">Robot</span>
-		<span class = "button">Robot</span>
+	<div id="navWrap">
+       <div id="nav">
+		<ul>
+           <li><a href="#" class="button">Home</a></li>
+           <li><a href="#" class="button">Our Story</a></li>
+           <li><a href="#" class="button">Our Team</a></li>
+           <li><a href="#" class="button">Robot</a></li>
+           <li><a href="#" class="button">Donate</a></li>
+           <br class="clearLeft" />
+         </ul>    
+       </div>
 	</div>
-	<figure style="position: relative; left: 0; top: 0;" class = 'hero'>
-		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="http://www.usfirst.org/uploadedImages/Robotics_Programs/FRC/FRC_Communications_Resource_Center/Branding_and_Logos/FIRST_horz.gif">
+	<p><a name="1"></a>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta justo in tellus porttitor non placerat dui pulvinar. Aliquam erat volutpat. Morbi ullamcorper libero sit amet tortor porta iaculis. Duis sit amet diam dolor. Mauris bibendum pharetra justo, sed ornare arcu scelerisque vitae. Integer molestie dignissim lacinia. Etiam sagittis consectetur iaculis. Pellentesque fringilla nulla at tortor dictum lobortis.
+    </p>
+    <p>
+        <span class="bigNum">1.</span> Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna, vel consectetur nisi. Nullam tortor augue, scelerisque et consequat eu, fermentum at eros. Donec scelerisque ullamcorper tincidunt.
+    </p>
+    
+		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
+		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
 		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
-	</figure>
+	
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" language="JavaScript">
@@ -47,11 +153,7 @@
     </li>
   </ul>
 </section>
-
-
 	
 </body>
-
-
 
 </html>
