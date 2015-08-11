@@ -14,33 +14,6 @@
 	font-family: 'Ubuntu' , sans-serif;
 	display: table-cell;
 	}
-
-/*#navWrap {
-   height: 50px;
-}
-#nav {
-   background: #FF5252;    
-}
-#nav ul {
-   margin-top: 10;
-   padding: 0;   
-   width: 100%; 
-}
-#nav li {
-   float: left;
-   
-   background-color: #FFF;
-   color: #FF5252;
-   list-style-type: none;
-}
-#nav li a {
-   color: #FFFFFF;  
-   text-decoration: none;    
-}
-#nav li a:hover {
-   text-decoration: underline;   
-}*/
-
 #heropic{
 	background-size: cover;
 	width: 100%;
@@ -124,4 +97,14 @@ section #services li span {
   font-size: 1.2em;
   text-align: center;
 }
+
+
+p{
+	color: #FFFFFF;
+}
+
+
+
+
+
 
