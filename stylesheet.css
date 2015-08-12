@@ -15,32 +15,29 @@
 	display: table-cell;
 	}
 #heropic{
-	background-size: cover;
 	width: 100%;
 	height: auto;
 	position: relative;
-  	float: left;
+  float: left;
 	cursor: pointer;
 	box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
-	  display: block;
-	  background-color: #FFFFFF;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  right: 0;
-  
-  -webkit-filter: grayscale(0.9);
+  display: block;
+  /*-webkit-filter: grayscale(0.9);*/
+  margin-bottom: 30px;
+}
+
+#teamPic{
+box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
 
 figure{
 	margin: 0;
 
 }
-footer{
+#socialMedia{
 	position: center;
 	width: 100%;
+  background-color: #FF5252;
 	
 }
 
@@ -57,12 +54,23 @@ footer{
 
 html, body {
   margin: 0;
-  background-color: #FF5252;
+  background-color: #FFFFFF;
+  height: 100%;
 }
 
+#scocialMedia{
+border: 5px #FF5252;
+background-color: #FF5252;
+
+}
 section #services {
   text-align: center;
   transform: translatez(0);
+  background-color: #FF5252;
+  border-width: 5px;
+  border-color: #FF5252;
+  margin: 0;
+  min-height: 180px;
   
 }
 section #services li {
@@ -71,6 +79,7 @@ section #services li {
   display: inline-block;
   margin: 20px;
   list-style: none;
+  background-color: #FF5252;
 }
 section #services li div {
   width: 100px;
@@ -96,19 +105,33 @@ section #services li span {
   text-transform: uppercase;
   font-size: 1.2em;
   text-align: center;
-<<<<<<< HEAD
-}
-=======
-}
+  background-color: #FF5252;
 
-
-p{
-	color: #FFFFFF;
+}
+p {	
+  background-color: #FFFFFF
 }
 
+h2{
+  color: #F44336;
+  font-family: Ubuntu , sans-serif;
+  font-size: 400%;
+  margin: 0;
+  padding-bottom: 30px;
+}
+  
+#ourStory{
+  width:100%;
+  text-align: center;
+  font-family: 'Ubuntu' , sans-serif;
+  font-size: 120%;
+  color: #FFFFFF;
+  position: relative;
+}
 
+#ourStoryContent{
+padding:15px;
+color: #000000;
 
+}
 
-
-
->>>>>>> 800dec779e84af2f70d5c52b689a5b807c8afdee

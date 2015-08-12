@@ -8,25 +8,23 @@
   #navWrap {
    height: 8%;
    z-index: 5;
-}
-#nav {
+   background-color: #FFFFFF;}
+  #nav {
    background: #FF5252;  
    position:fixed;  
    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
    width: 100%;
-   height: 8%;
+   height: 7%;
    z-index: 5;
-   margin: auto;
-}
-#nav ul {
+   margin: auto;}
+  #nav ul {
    margin-top: 10;
    padding: 0;   
    width: 100%; 
-   z-index: 5;
+   z-index: 6;
    display: block;
-   background-color: #FF5252;
-}
-#nav li {
+   background-color: #FF5252;}
+  #nav li {
    float: left;
    display: inline-block;
    background-color: #FF5252;
@@ -35,43 +33,16 @@
    margin: 5;
    width: 20%;
    margin: 0;
-   padding: 0;
-}
-#nav li a {
+   padding: 0;}
+  #nav li a {
    color: #FFFFFF;  
-   text-decoration: none;    
-}
-
-#ourStory{
-  width:100%;
-  text-align: center;
-  font-family: 'Ubuntu' , sans-serif;
-  font-size: 2em;
-  color: #FFFFFF;
-  position: relative;
-}
-
-#ourStory img{
-
-}
-#ourStoryContent{
-  position: absolute;
-  background-color: rgba(0,0,0,0.5);
-  border:1px solid white;
-  top: calc(50% - 250px);
-  left: calc(50% - 350px);
-  width: 700px;
-  height: 500px;
-}
-
+   text-decoration: none;    }
   </style>
 <script type='text/javascript'>
-$(window).load(function(){
-
-$(function() {
+$(window).load(function(){$(function() {
     // Stick the #nav to the top of the window
     var nav = $('#nav');
-    var navHomeY = nav.offset().top;
+    var navHomeY = top;
     var isFixed = false;
     var $w = $(window);
     $w.scroll(function() {
@@ -93,10 +64,7 @@ $(function() {
             });
             isFixed = false;
         }
-    });
-});
-
-});  
+    });});});  
 
 </script>
 <head>
@@ -110,44 +78,51 @@ $(function() {
        <div id="nav">
 		<ul>
            <li><a href="#home" class="button">Home</a></li>
-           <li><a href="#ourStory" class="button">Our Story</a></li>
-           <li><a href="#ourTeam" class="button">Our Team</a></li>
+           <li><a href="#ourStory" class="button">Story</a></li>
+           <li><a href="#ourTeam" class="button">Team</a></li>
            <li><a href="#robot" class="button">Robot</a></li>
            <li><a href="#donate" class="button">Donate</a></li>
            <br class="clearLeft" />
          </ul>    
        </div>
 	</div>
-	<p><a name="1"></a>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta justo in tellus porttitor non placerat dui pulvinar. Aliquam erat volutpat. Morbi ullamcorper libero sit amet tortor porta iaculis. Duis sit amet diam dolor. Mauris bibendum pharetra justo, sed ornare arcu scelerisque vitae. Integer molestie dignissim lacinia. Etiam sagittis consectetur iaculis. Pellentesque fringilla nulla at tortor dictum lobortis.
-    </p>
-    <p>
-        <span class="bigNum">1.</span> Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna, vel consectetur nisi. Nullam tortor augue, scelerisque et consequat eu, fermentum at eros. Donec scelerisque ullamcorper tincidunt.
-    </p>
-    
-		<!-- <img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
-		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png"> -->
+		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
+		<!--mg id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png"> -->
 		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
 	
 	
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript" language="JavaScript">
-  		function set_height() { // set body height = window height
+
+
    	 	$('body').height($(window).height());
   		}
   		$(document).ready(function() {
     		$(window).bind('resize', set_thing_height);
     		set_height();
-  		});
-	</script>
+  		});</script>
+
+
 	<div id="ourStory" class="vertical-center-outer">
-    <img src="OSPic.jpg" width="100%" />
-    <div id="ourStoryContent" class="vertical-center-inner">
-      <h2>Our Story</h2>
-        Team Robowiz
+    <h2>Story</h2>
+    <img id="teamPic" src="OSPic.jpg" width="100%" />
+    <div id="ourStoryContent">
+        Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna
     </div>
-</div>
-<section>
+  </div> 
+
+  <div id="teamSection">
+    <div id ="Abhishek"></div>
+    <div id = "Adarsh"></div>
+    <div id = "Cedric"></div>
+    <div id = "Jami"></div>
+    <div id = "Josal"></div>
+    <div id = "Radhika"></div>
+    <div id = "Saarthak"></div>
+    <div id = "Shomik"></div>
+  </div>
+
+<section id = "social Media">
   <ul id='services'>
     <li>
       <div class='entypo-facebook'></div>
