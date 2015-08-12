@@ -15,6 +15,7 @@
    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
    width: 100%;
    height: 7%;
+   min-height: 70px;
    z-index: 5;
    margin: auto;}
   #nav ul {
@@ -85,7 +86,7 @@ $(window).load(function(){$(function() {
          </ul>    
        </div>
 	</div>
-		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
+		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="Assets/robowiz.png">
 		<!--mg id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png"> -->
 		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
 	
@@ -103,7 +104,7 @@ $(window).load(function(){$(function() {
 
 	<div id="ourStory" class="vertical-center-outer">
     <h2>Story</h2>
-    <img id="teamPic" src="OSPic.jpg" width="100%" />
+    <img id="teamPic" src="Assets/OSPic.jpg" width="100%" />
     <div id="ourStoryContent">
         Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna
     </div>
@@ -112,10 +113,10 @@ $(window).load(function(){$(function() {
   <hr>
 <script type="text/javascript">
   function hover (element){
-    element.setAttribute('src', "android.jpg")
+    element.setAttribute('src', "Assets/teamCrazy/android.jpg")
   } 
   function unhover (element){
-    element.setAttribute('src', "abhishekNormal.jpg")
+    element.setAttribute('src', "Assets/teamNormal/abhishekNormal.jpg")
   }
   </script>
 
@@ -125,7 +126,7 @@ $(window).load(function(){$(function() {
     <ul id = "members">
       <li>
     <div class = "member" id ="Abhishek">
-      <img src="abhishekNormal.jpg">
+      <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Abhishek</span>
     </div>
     </li>
@@ -133,20 +134,20 @@ $(window).load(function(){$(function() {
     <li>
     <div class = "member" id = "Adarsh">
   
-      <img src="abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
+      <img src="Assets/teamNormal/abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
       <span>Adarsh</span>
     </div>
   </li>
 
     <li>
       <div class = "member" id = "Cedric">
-        <img src="abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
+        <img src="Assets/teamNormal/abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
       <span>Adarsh</span>
     </div>
   </li>
     <li>
       <div class = "member" id = "Jami">
-        <img src="abhishekNormal.jpg">
+        <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
       </div>
     </li>
@@ -154,30 +155,37 @@ $(window).load(function(){$(function() {
   <ul id = "members">
     <li>
       <div class = "member" id = "Josal">
-        <img src="abhishekNormal.jpg">
+        <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
       </div>
     </li>
     <li>
       <div class = "member" id = "Radhika">
-      <img src="abhishekNormal.jpg">
+      <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
     </div>
     </li>
     <li>
       <div class = "member" id = "Saarthak">
-        <img src="abhishekNormal.jpg">
+        <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
       </div>
     </li>
     <li>
       <div class = "member" id = "Shomik">
-        <img src="abhishekNormal.jpg">
+        <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
       </div>
     </li>
   </ul>
   </div>
+
+<hr>
+
+<div id = "robotSection">
+<h2>Robot</h2>
+</div>
+
 
 <section id = "social Media">
   <ul id='services'>

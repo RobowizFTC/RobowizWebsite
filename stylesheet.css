@@ -4,7 +4,7 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 .button{
 
-	font-size: 28;
+	font-size: 2em;
 	color: #FFFFFF;
 	background-color: #FF5252;
 	padding-top: 0;
@@ -116,6 +116,7 @@ h2{
   font-size: 400%;
   margin: 0;
   padding-bottom: 30px;
+  text-align: center;
 }
 
 hr{
