@@ -80,7 +80,7 @@ $(window).load(function(){$(function() {
            <li><a href="#ourStory" class="button">Story</a></li>
            <li><a href="#ourTeam" class="button">Team</a></li>
            <li><a href="#robot" class="button">Robot</a></li>
-           <li><a href="#donate" class="button">Donate</a></li>
+           <li><a href="#donate" class="button">Sponsors</a></li>
            <br class="clearLeft" />
          </ul>    
        </div>
@@ -110,6 +110,14 @@ $(window).load(function(){$(function() {
   </div> 
 
   <hr>
+<script type="text/javascript">
+  function hover (element){
+    element.setAttribute('src', "android.jpg")
+  } 
+  function unhover (element){
+    element.setAttribute('src', "abhishekNormal.jpg")
+  }
+  </script>
 
   <div id="teamSection">
     <h2>Team</h2>
@@ -124,14 +132,15 @@ $(window).load(function(){$(function() {
 
     <li>
     <div class = "member" id = "Adarsh">
-      <img src="abhishekNormal.jpg">
+  
+      <img src="abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
       <span>Adarsh</span>
     </div>
   </li>
 
     <li>
       <div class = "member" id = "Cedric">
-        <img src="abhishekNormal.jpg">
+        <img src="abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
       <span>Adarsh</span>
     </div>
   </li>
