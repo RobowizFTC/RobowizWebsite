@@ -6,7 +6,7 @@
 
   <style type="text/css">
   #navWrap {
-   height: 60px;
+   height: 8%;
    z-index: 5;
 }
 #nav {
@@ -14,21 +14,28 @@
    position:fixed;  
    box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
    width: 100%;
+   height: 8%;
    z-index: 5;
+   margin: auto;
 }
 #nav ul {
    margin-top: 10;
    padding: 0;   
    width: 100%; 
    z-index: 5;
+   display: block;
+   background-color: #FF5252;
 }
 #nav li {
    float: left;
-   
-   background-color: #FFF;
+   display: inline-block;
+   background-color: #FF5252;
    color: #FF5252;
    list-style-type: none;
-   margin-bottom: 10;
+   margin: 5;
+   width: 20%;
+   margin: 0;
+   padding: 0;
 }
 #nav li a {
    color: #FFFFFF;  
@@ -58,31 +65,8 @@
 }
 
   </style>
-<!--script type="text/javascript">
-$(document).ready(function () {  
-  var top = $('#yourID').offset().top - parseFloat($('#yourID').css('marginTop').replace(/auto/, 100));
-  $(window).scroll(function (event) {
-    // what the y position of the scroll is
-    var y = $(this).scrollTop();
-
-    // whether that's below the form
-    if (y >= top) {
-      // if so, ad the fixed class
-      $('#yourID').addClass('fixed');
-    } else {
-      // otherwise remove it
-      $('#yourID').removeClass('fixed');
-    }
-  });
-});
-</script-->
 <script type='text/javascript'>
 $(window).load(function(){
-/**
-************************************************************
-*************** THIS IS THE NAVIGATION CODE ****************
-************************************************************
-**/
 
 $(function() {
     // Stick the #nav to the top of the window
@@ -125,11 +109,19 @@ $(function() {
 	<div id="navWrap">
        <div id="nav">
 		<ul>
+<<<<<<< HEAD
            <li><a href="#home" class="button">Home</a></li>
            <li><a href="#ourStory" class="button">Our Story</a></li>
            <li><a href="#ourTeam" class="button">Our Team</a></li>
            <li><a href="#robot" class="button">Robot</a></li>
            <li><a href="#donate" class="button">Donate</a></li>
+=======
+           <li><a href="#" class="button">Home</a></li>
+           <li><a href="#" class="button">Story</a></li>
+           <li><a href="#" class="button">Team</a></li>
+           <li><a href="#" class="button">Robot</a></li>
+           <li><a href="#" class="button">Donate</a></li>
+>>>>>>> 800dec779e84af2f70d5c52b689a5b807c8afdee
            <br class="clearLeft" />
          </ul>    
        </div>
