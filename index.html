@@ -35,6 +35,28 @@
    text-decoration: none;    
 }
 
+#ourStory{
+  width:100%;
+  text-align: center;
+  font-family: 'Ubuntu' , sans-serif;
+  font-size: 2em;
+  color: #FFFFFF;
+  position: relative;
+}
+
+#ourStory img{
+
+}
+#ourStoryContent{
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  border:1px solid white;
+  top: calc(50% - 250px);
+  left: calc(50% - 350px);
+  width: 700px;
+  height: 500px;
+}
+
   </style>
 <!--script type="text/javascript">
 $(document).ready(function () {  
@@ -103,11 +125,11 @@ $(function() {
 	<div id="navWrap">
        <div id="nav">
 		<ul>
-           <li><a href="#" class="button">Home</a></li>
-           <li><a href="#" class="button">Our Story</a></li>
-           <li><a href="#" class="button">Our Team</a></li>
-           <li><a href="#" class="button">Robot</a></li>
-           <li><a href="#" class="button">Donate</a></li>
+           <li><a href="#home" class="button">Home</a></li>
+           <li><a href="#ourStory" class="button">Our Story</a></li>
+           <li><a href="#ourTeam" class="button">Our Team</a></li>
+           <li><a href="#robot" class="button">Robot</a></li>
+           <li><a href="#donate" class="button">Donate</a></li>
            <br class="clearLeft" />
          </ul>    
        </div>
@@ -119,8 +141,8 @@ $(function() {
         <span class="bigNum">1.</span> Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna, vel consectetur nisi. Nullam tortor augue, scelerisque et consequat eu, fermentum at eros. Donec scelerisque ullamcorper tincidunt.
     </p>
     
-		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
-		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
+		<!-- <img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png">
+		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png"> -->
 		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
 	
 	
@@ -134,9 +156,13 @@ $(function() {
     		set_height();
   		});
 	</script>
-	<div id = 'ourStory'>
-		<p></p>
-	</div>
+	<div id="ourStory" class="vertical-center-outer">
+    <img src="OSPic.jpg" width="100%" />
+    <div id="ourStoryContent" class="vertical-center-inner">
+      <h2>Our Story</h2>
+        Team Robowiz
+    </div>
+</div>
 <section>
   <ul id='services'>
     <li>
