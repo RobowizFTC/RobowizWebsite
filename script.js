@@ -34,12 +34,7 @@ $('body').height($(window).height());
             set_height();
         });
 
-function hover (element){
-    element.setAttribute('src', "Assets/teamCrazy/android.jpg")
-  } 
-  function unhover (element){
-    element.setAttribute('src', "Assets/teamNormal/abhishekNormal.jpg")
-  }
+
 
 
 
