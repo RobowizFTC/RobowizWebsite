@@ -2,18 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
 @import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
 @import url(http://weloveiconfonts.com/api/?family=entypo);
-.button{
 
-	font-size: 2em;
-	color: #FFFFFF;
-	background-color: #FF5252;
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-left: 100;
-	padding-right: 100;
-	font-family: 'Ubuntu' , sans-serif;
-	display: table-cell;
-	}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 #heropic{
 	width: 100%;
 	height: auto;
@@ -108,7 +101,8 @@ h2{
   font-size: 400%;
   margin: 0;
   padding-bottom: 30px;
-  text-align: center;}
+  text-align: center;
+padding-top: 7%;}
 
 hr{
     border: 0;
@@ -133,7 +127,7 @@ color: #000000;
   text-align: center;
 }
 
-#members{
+.members{
   list-style: none;
 
 }
@@ -155,7 +149,7 @@ color: #000000;
 
 }
 
-#members li{
+.members li{
 width: 100px;
   height: 80px;
   display: inline-block;
@@ -177,8 +171,43 @@ text-align: center;
 
 }
 
+.more-info > div {
+  display: none;
+}
+
+.more-info .x {
+  border: 1px solid black;
+  background-color: #FFCCCC;
+  padding: 10px;
+}
 
 
 
+.slick-prev {
+  left: 30px;
+  z-index: 9001;
+}
+
+.slick-next {
+  right: 78px;
+  z-index: 9001;
+}
+
+.slick-prev:before, .slick-next:before {
+  content: "";
+  display: inline-block;
+  
+  background-size: 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.slick-prev:before {
+  background-image: url("arrow_left.png");
+}
+
+.slick-next:before {
+  background-image: url("arrow_right.png");
+}
 
 

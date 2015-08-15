@@ -1,13 +1,14 @@
-<!Doctype>
+<!DOCTYPE html>
 <html>
 
 <!-- Include jQuery -->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <style type="text/css">
   #navWrap {
    height: 8%;
-   z-index: 5;
+   z-index: 9002;
    background-color: #FFFFFF;}
   #nav {
    background: #FF5252;  
@@ -16,8 +17,9 @@
    width: 100%;
    height: 7%;
    min-height: 70px;
-   z-index: 5;
-   margin: auto;}
+   z-index: 9002;
+   margin: auto;
+   }
   #nav ul {
    margin-top: 10;
    padding: 0;   
@@ -31,16 +33,21 @@
    background-color: #FF5252;
    color: #FF5252;
    list-style-type: none;
-   margin: 5;
    width: 20%;
    margin: 0;
-   padding: 0;}
+   padding: 0;
+   text-align: center;
+   }
   #nav li a {
    color: #FFFFFF;  
-   text-decoration: none;    }
+   text-decoration: none;
+   font-size: 2em;
+ }
   </style>
 <script type='text/javascript' src = "script.js"></script>
 <head>
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 </head>
@@ -48,24 +55,31 @@
 <body>
 	
 	<div id="navWrap">
-       <div id="nav">
-		<ul>
-           <li><a href="#home" class="button">Home</a></li>
-           <li><a href="#ourStory" class="button">Story</a></li>
-           <li><a href="#ourTeam" class="button">Team</a></li>
-           <li><a href="#robot" class="button">Robot</a></li>
-           <li><a href="#donate" class="button">Sponsors</a></li>
-           <br class="clearLeft" />
-         </ul>    
-       </div>
+   <div id="nav">
+    <ul>
+     <li><a href="#home" class="button">Home</a></li>
+     <li><a href="#ourStory" class="button">Story</a></li>
+     <li><a href="#ourTeam" class="button">Team</a></li>
+     <li><a href="#robot" class="button">Robot</a></li>
+     <li><a href="#donate" class="button">Sponsors</a></li>
+   </ul>    
+ </div>
 	</div>
-		<img id = "heroPic" style = "position:relative; top: 0; left:0" src="Assets/robowiz.png">
+  <div id="home">
+		<img id = "heroPic" width="100%" src="Assets/robowiz.png">
 		<!--mg id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png"> -->
 		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
+  </div>
 
 	<div id="ourStory" class="vertical-center-outer">
     <h2>Story</h2>
-    <img id="teamPic" src="Assets/OSPic.jpg" width="100%" />
+    <div id="main-carousel">
+      <img id="teamPic" src="Assets/OSPic.jpg" width="100%" />
+      <img id="teamPic" src="Assets/OSPic.jpg" width="100%" />
+      <img id="teamPic" src="Assets/OSPic.jpg" width="100%" />
+      <img id="teamPic" src="Assets/OSPic.jpg" width="100%" />
+    </div>
+
     <div id="ourStoryContent">
         Aliquam erat volutpat. Integer pulvinar dignissim lacus eu lacinia. Sed vitae orci eget nisl ultricies feugiat quis ut velit. Sed urna mauris, viverra volutpat pulvinar et, tempus vel odio. Aenean at posuere massa. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam quis augue nisi, quis ornare nisl. Nulla sagittis neque at massa venenatis tincidunt. Morbi sed nibh magna
     </div>
@@ -81,10 +95,10 @@
   }
   </script>
 
-  <div id="teamSection">
+  <div id="ourTeam">
     <h2>Team</h2>
 
-    <ul id = "members">
+    <ul class = "members">
       <li>
     <div class = "member" id ="Abhishek">
       <img src="Assets/teamNormal/abhishekNormal.jpg">
@@ -113,7 +127,17 @@
       </div>
     </li>
   </ul>
-  <ul id = "members">
+
+  <div class="more-info">
+    <div data-name="Adarsh">
+      <div class="content">this is some info about Adarsh yeeee happy<div class="x">X</div></div>
+    </div>
+    <div data-name="Cedric">
+      <div class="content">this is some info about Cedric woohoooooo party<div class="x">X</div></div>
+    </div>
+  </div>
+
+  <ul class = "members">
     <li>
       <div class = "member" id = "Josal">
         <img src="Assets/teamNormal/abhishekNormal.jpg">
@@ -139,11 +163,20 @@
       </div>
     </li>
   </ul>
+
+  <div class="more-info">
+    <div data-name="Saarthak">
+      <div class="content">this is some info about Saarthak wowwww omg how's it going!!!<div class="x">X</div></div>
+    </div>
+    <div data-name="Shomik">
+      <div class="content">this is some info about Shomik i'm having way too much funnnn what evenn<div class="x">X</div></div>
+    </div>
+  </div>
   </div>
 
 <hr>
 
-<div id = "robotSection">
+<div id = "robot">
 <h2>Robot</h2>
 <div id = "robotContain">
   <img id = "robotPic" src="Assets/ftc1.png">
@@ -156,7 +189,7 @@
 </div>
 
 
-<section id = "social Media">
+<section id = "socialMedia">
   <ul id='services'>
     <li>
       <div class='entypo-facebook'></div>
