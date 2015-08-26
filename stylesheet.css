@@ -18,6 +18,7 @@ body {
   /*-webkit-filter: grayscale(0.9);*/
   margin-bottom: 30px;
 }
+
 #teamPic{
 box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
 }
@@ -48,6 +49,10 @@ html, body {
   margin: 0;
   background-color: #FFFFFF;
   height: 100%;
+}
+
+a{
+  text-decoration: none;
 }
 
 #scocialMedia{
@@ -118,6 +123,8 @@ hr{
   position: relative;
 }
 
+
+
 #ourStoryContent{
 padding:15px;
 color: #000000;
@@ -129,13 +136,43 @@ color: #000000;
 
 .members{
   list-style: none;
+  position: relative;
 
 }
 
+.member{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .member img{
+  -webkit-transition: opacity 1s ;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  margin: 0 auto;
   height: 300px;
   width: 250px;
   border-radius: 5px;
+}
+
+.member img.normal{
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+img.normal:hover {
+opacity: 0;
+}
+
+.member img.crazy{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .member span{
@@ -150,25 +187,22 @@ color: #000000;
 }
 
 .members li{
-width: 100px;
+  width: 100px;
   height: 80px;
   display: inline-block;
   margin-right: 15%;
   margin-top: 50px;
   margin-bottom: 50px;
   list-style: none;
-
 }
 
 #robotPic{
 width: 500px;
 height: 500px;
-
 }
 
 #robotContain{
 text-align: center;
-
 }
 
 .more-info > div {
@@ -196,7 +230,6 @@ text-align: center;
 .slick-prev:before, .slick-next:before {
   content: "";
   display: inline-block;
-  
   background-size: 64px 64px;
   width: 64px;
   height: 64px;
@@ -213,17 +246,30 @@ text-align: center;
 #robotIcons{
   text-align: center;
   display: block;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .robotIcon{
   list-style: none;
   display: inline-block;
+  padding-right: 80px;
 }
 
 .robotIcon img{
   list-style: none;
-  height: 250px;
-  width: 250px;
+  height: 200px;
+  width: 200px;
 }
 
-
+.robotIcon img:hover{
+  list-style: none;
+  height: 200px;
+  width: 200px;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+.robotIcon span{
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+}

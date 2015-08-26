@@ -67,8 +67,6 @@
 	</div>
   <div id="home">
 		<img id = "heroPic" width="100%" src="Assets/robowiz.png">
-		<!--mg id = "heroPic" style = "position:relative; top: 0; left:0" src="robowiz.png"> -->
-		<!--img id = "heroTint" style = "position:absolute; top: 0; left:0" src="http://images6.fanpop.com/image/photos/34500000/Blue-Wallpaper-colors-34503103-1440-900.png"-->
   </div>
 
 	<div id="ourStory" class="vertical-center-outer">
@@ -86,7 +84,7 @@
   </div> 
 
   <hr>
-<script type="text/javascript">
+<!--script type="text/javascript">
   function hover (element){
     element.setAttribute('src', "Assets/teamCrazy/android.jpg")
   } 
@@ -100,7 +98,7 @@
   function unhoverJosal (element){
     element.setAttribute('src', "Assets/teamNormal/josalNormal.jpg")
   }
-  </script>
+  </script-->
 
   <div id="ourTeam">
     <h2>Team</h2>
@@ -115,18 +113,20 @@
 
     <li>
     <div class = "member" id = "Josal">
-  
-      <img src="Assets/teamNormal/josalNormal.jpg" onmouseover = "hoverJosal(this);" onmouseout = "unhoverJosal(this)">
+      <img src="Assets/teamNormal/josalNormal.jpg" class="normal">
+      <img src="Assets/teamCrazy/josalCrazy.jpg" class="crazy">
       <span>Josal</span>
     </div>
   </li>
 
     <li>
       <div class = "member" id = "Cedric">
-        <img src="Assets/teamNormal/abhishekNormal.jpg" onmouseover = "hover(this);" onmouseout = "unhover(this)">
+        <img src="Assets/teamNormal/abhishekNormal.jpg" class="normal">
+        <img src="Assets/teamCrazy/android.jpg" class="crazy">
       <span>Adarsh</span>
     </div>
   </li>
+
     <li>
       <div class = "member" id = "Jami">
         <img src="Assets/teamNormal/abhishekNormal.jpg">
@@ -137,10 +137,11 @@
 
   <div class="more-info">
     <div data-name="Adarsh">
-      <div class="content">this is some info about Adarsh yeeee happy<div class="x">X</div></div>
+      <div class="content">this is some info about Adarsh yeeee happy</div>
     </div>
+
     <div data-name="Cedric">
-      <div class="content">this is some info about Cedric woohoooooo party<div class="x">X</div></div>
+      <div class="content">this is some info about Cedric woohoooooo party</div>
     </div>
   </div>
 
@@ -151,18 +152,21 @@
       <span>Adarsh</span>
       </div>
     </li>
+
     <li>
       <div class = "member" id = "Radhika">
       <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
     </div>
     </li>
+
     <li>
       <div class = "member" id = "Saarthak">
         <img src="Assets/teamNormal/abhishekNormal.jpg">
       <span>Adarsh</span>
       </div>
     </li>
+
     <li>
       <div class = "member" id = "Shomik">
         <img src="Assets/teamNormal/abhishekNormal.jpg">
@@ -173,10 +177,10 @@
 
   <div class="more-info">
     <div data-name="Saarthak">
-      <div class="content">this is some info about Saarthak wowwww omg how's it going!!!<div class="x">X</div></div>
+      <div class="content">this is some info about Saarthak wowwww omg how's it going!!!</div>
     </div>
     <div data-name="Shomik">
-      <div class="content">this is some info about Shomik i'm having way too much funnnn what evenn<div class="x">X</div></div>
+      <div class="content">this is some info about Shomik i'm having way too much funnnn what evenn</div>
     </div>
   </div>
   </div>
@@ -190,20 +194,20 @@
   <ul id = "robotIcons">
       <li class = "robotIcon">
             <img src="Assets/robotIcons/ChassisIcon.png">
+            <span>4-wheel drive</span>
       </li>
 
       <li class = "robotIcon">
             <img src="Assets/robotIcons/armIcon.png">
+            <span>Cascade Lift</span>
       </li>
 
       <li class = "robotIcon">
             <img src="Assets/robotIcons/electricalsIcon.png">
+            <span>Electrical System</span>
       </li>
 </ul>
 </div>
-
-
-
 </div>
 
 <div id = "Sponsors">
@@ -214,15 +218,15 @@
 <section id = "socialMedia">
   <ul id='services'>
     <li>
-      <div class='entypo-facebook'></div>
+      <a href="https://www.facebook.com/pages/Robowiz-FTC/405793039457722"><div class='entypo-facebook'></div></a>
       <span>Facebook</span>
     </li>
     <li>
-      <div class='entypo-twitter'></div>
+      <a href="https://twitter.com/teamrobowiz" target = "_blank"><div class='entypo-twitter'></div></a>
       <span>Twitter</span>
     </li>
     <li>
-      <div class='entypo-github'></div>
+      <a href="https://github.com/RobowizFTC" target = "_blank"><div class='entypo-github'></div></a>
       <span>Github</span>
     </li>
   </ul>
