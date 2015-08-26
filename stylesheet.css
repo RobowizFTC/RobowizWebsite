@@ -210,4 +210,14 @@ text-align: center;
   background-image: url("arrow_right.png");
 }
 
+.robotIcon{
+  list-style: none;
+}
+
+#robotIcons img{
+  list-style: none;
+  height: 250px;
+  width: 250px;
+}
+
 
