@@ -210,11 +210,17 @@ text-align: center;
   background-image: url("arrow_right.png");
 }
 
-.robotIcon{
-  list-style: none;
+#robotIcons{
+  text-align: center;
+  display: block;
 }
 
-#robotIcons img{
+.robotIcon{
+  list-style: none;
+  display: inline-block;
+}
+
+.robotIcon img{
   list-style: none;
   height: 250px;
   width: 250px;
