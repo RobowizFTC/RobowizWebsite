@@ -196,15 +196,6 @@ opacity: 0;
   list-style: none;
 }
 
-#robotPic{
-width: 500px;
-height: 500px;
-}
-
-#robotContain{
-text-align: center;
-}
-
 .more-info > div {
   display: none;
 }
@@ -243,6 +234,56 @@ text-align: center;
   background-image: url("arrow_right.png");
 }
 
+
+
+#robotContain{
+text-align: center;
+}
+
+#robotPicContain{
+  position: relative;
+top: 0;
+left: 0;
+}
+
+#armPic{
+  position:absolute;
+  left: 38%;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  z-index: 4;
+}
+
+#electricalPic{
+  position:absolute;
+  left: 38%;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  z-index: 3;
+}
+#chassisPic{
+  position:relative;
+  left: 0;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  z-index: 5;
+}
+
+#chassisPic.transparent{
+  opacity: 0;
+}
+
+#armPic.transparent{
+  opacity: 0;
+}
+
+#electricalPic.transparent{
+  opacity: 0;
+}
+
 #robotIcons{
   text-align: center;
   display: block;
@@ -260,6 +301,10 @@ text-align: center;
   list-style: none;
   height: 200px;
   width: 200px;
+  transition: all 1s;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .robotIcon img:hover{
@@ -268,8 +313,23 @@ text-align: center;
   width: 200px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+  transform:rotate(360deg);
+  opacity: 1;
 }
 .robotIcon span{
   display: block;
   font-family: 'Ubuntu', sans-serif;
+  color: #FF5252;
+  font-size: 2em;
 }
+
+#chassisIcon{
+  cursor: pointer;
+}
+#armIcon{
+  cursor: pointer;
+}
+#electricalIcon{
+  cursor: pointer;
+}
+

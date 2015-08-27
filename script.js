@@ -46,10 +46,8 @@ $('body').height($(window).height());
         
 $(document).ready(function() {
     var scrollingSpeed = 600;
-
-    // $(window).bind('resize', set_thing_height);
-    // set_height();
-
+    $("#armPic").addClass("transparent");
+        $("#electricalPic").addClass("transparent");
     // SiteHeaderNav Links
     $("#nav a").click(function(e) {
         e.preventDefault();
@@ -68,5 +66,23 @@ $(document).ready(function() {
 
     $(".more-info .x").click(function() {
         $(".more-info > div").slideUp(200);
+    });
+
+    $("#chassisIcon").click(function() {
+        $("#armPic").addClass("transparent");
+        $("#electricalPic").addClass("transparent");
+        $("#chassisPic").removeClass("transparent");
+    });
+
+    $("#armIcon").click(function() {
+        $("#chassisPic").addClass("transparent");
+        $("#electricalPic").addClass("transparent");
+        $("#armPic").removeClass("transparent");
+    });
+
+    $("#electricalIcon").click(function() {
+        $("#chassisPic").addClass("transparent");
+        $("#electricalPic").removeClass("transparent");
+        $("#armPic").addClass("transparent");
     });
 });
