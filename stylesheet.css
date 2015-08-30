@@ -105,9 +105,9 @@ h2{
   font-family: Ubuntu , sans-serif;
   font-size: 400%;
   margin: 0;
-  padding-bottom: 30px;
   text-align: center;
-padding-top: 7%;}
+ padding-bottom: 1%;
+}
 
 hr{
     border: 0;
@@ -123,8 +123,6 @@ hr{
   position: relative;
 }
 
-
-
 #ourStoryContent{
 padding:15px;
 color: #000000;
@@ -136,6 +134,7 @@ color: #000000;
 
 .members{
   list-style: none;
+  text-align: center;
   position: relative;
 
 }
@@ -238,20 +237,22 @@ opacity: 0;
 
 #robotContain{
 text-align: center;
+margin: 0;
+padding: 0;
 }
 
 #robotPicContain{
   position: relative;
-top: 0;
-left: 0;
+ top: 0;
+ left: 0;
 }
 
 #armPic{
   position:absolute;
   left: 38%;
   top: 0;
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   z-index: 4;
 }
 
@@ -259,16 +260,16 @@ left: 0;
   position:absolute;
   left: 38%;
   top: 0;
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   z-index: 3;
 }
 #chassisPic{
   position:relative;
   left: 0;
   top: 0;
-  height: 500px;
-  width: 500px;
+  height: 300px;
+  width: 300px;
   z-index: 5;
 }
 
@@ -299,8 +300,8 @@ left: 0;
 
 .robotIcon img{
   list-style: none;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   transition: all 1s;
   position: relative;
   top: 0;
@@ -309,8 +310,8 @@ left: 0;
 
 .robotIcon img:hover{
   list-style: none;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
   transform:rotate(360deg);
