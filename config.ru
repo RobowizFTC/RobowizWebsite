@@ -1,5 +1,5 @@
 use Rack::Static,
-  :urls => ["/Assets"],
+  :urls => ["/RobowizWebsite"],
   :root => "RobowizWebsite"
 
 run lambda { |env|
